@@ -3077,8 +3077,8 @@ void process_events() {
 				{
 					case SDL_CONTROLLER_BUTTON_DPAD_LEFT:  joy_hat_states[0] = -1; break; // left
 					case SDL_CONTROLLER_BUTTON_DPAD_RIGHT: joy_hat_states[0] = 1;  break; // right
-					case SDL_CONTROLLER_BUTTON_DPAD_UP:    joy_hat_states[1] = -1; break; // up
-					case SDL_CONTROLLER_BUTTON_DPAD_DOWN:  joy_hat_states[1] = 1;  break; // down
+					case SDL_CONTROLLER_BUTTON_DPAD_UP:    joy_AY_buttons_state = -1; break; // up
+					case SDL_CONTROLLER_BUTTON_DPAD_DOWN:  joy_AY_buttons_state = 1;  break; // down
 
 					case SDL_CONTROLLER_BUTTON_A:          joy_AY_buttons_state = 1;  break; /*** A (down) ***/
 					case SDL_CONTROLLER_BUTTON_Y:          joy_AY_buttons_state = -1; break; /*** Y (up) ***/
@@ -3102,8 +3102,8 @@ void process_events() {
 				{
 					case SDL_CONTROLLER_BUTTON_DPAD_LEFT:  joy_hat_states[0] = 0; break; // left
 					case SDL_CONTROLLER_BUTTON_DPAD_RIGHT: joy_hat_states[0] = 0; break; // right
-					case SDL_CONTROLLER_BUTTON_DPAD_UP:    joy_hat_states[1] = 0; break; // up
-					case SDL_CONTROLLER_BUTTON_DPAD_DOWN:  joy_hat_states[1] = 0; break; // down
+					case SDL_CONTROLLER_BUTTON_DPAD_UP:    joy_AY_buttons_state = 0; break; // up
+					case SDL_CONTROLLER_BUTTON_DPAD_DOWN:  joy_AY_buttons_state = 0; break; // down
 
 					case SDL_CONTROLLER_BUTTON_A:          joy_AY_buttons_state = 0; break; /*** A (down) ***/
 					case SDL_CONTROLLER_BUTTON_Y:          joy_AY_buttons_state = 0; break; /*** Y (up) ***/
